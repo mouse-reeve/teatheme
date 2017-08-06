@@ -16,21 +16,64 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "dancing-script";
+    src:url("../fonts/DancingScript-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open-sans";
+    src:url("../fonts/OpenSansCondensed-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url("../images/background.png");
+}
+
 h1, h2, h3, h4 {
     font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
     text-transform: uppercase;
+    font-family: "open-sans", sans-serif;
+    letter-spacing: 1.5em;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: "dancing-script", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #426dc2;
+}
+
+a:hover {
+    color: black;
 }
 
 .page-description, .author-bio {
-    color: #c0c0c0;
+    color: #BECDEA;
 }
 
-.site-wrapper {
-    clear: both;
+
+.site-wrapper, .nav {
+    margin: 0 auto;
+    width: 50em;
+    padding: 2em;
+    background-color: white;
 }
 
 .nav {
-    margin-bottom: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
     overflow: hidden;
 }
 
@@ -46,6 +89,10 @@ h1, h2, h3, h4 {
     list-style: none;
 }
 
+.nav li.subscribe-button {
+    float: right;
+}
+
 .blog-logo img {
     width: 100px;
     display: block;
@@ -56,10 +103,6 @@ h1, h2, h3, h4 {
 .main-header {
     background-size: cover;
     min-height: 100px;
-}
-
-.post-head {
-    float: left;
 }
 
 .author-thumb {
@@ -102,9 +145,16 @@ h1, h2, h3, h4 {
 
 .post {
     max-width: 45em;
-    margin-left: 1em;
     margin-top: 1em;
     margin-bottom: 3em;
+}
+
+.post-title {
+    letter-spacing: 0.05em;
+}
+
+.post-head {
+    float: left;
 }
 
 .post-meta {
