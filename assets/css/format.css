@@ -32,13 +32,14 @@
 
 body {
     background-image: url("../images/background.png");
+    font-family: garamond, georgia, serif;
 }
 
 h1, h2, h3, h4 {
     font-family: "open-sans", sans-serif;
 }
 
-h1 {
+h1.page-title {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
@@ -46,9 +47,18 @@ h1 {
 }
 
 h2.page-description {
+    color: #BECDEA;
     font-family: "dancing-script", sans-serif;
     text-align: center;
     font-size: 1.9rem;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
 }
 
 a {
@@ -59,11 +69,6 @@ a {
 a:hover {
     color: black;
 }
-
-.page-description, .author-bio {
-    color: #BECDEA;
-}
-
 
 .site-wrapper, .nav {
     margin: 0 auto;
@@ -79,19 +84,20 @@ a:hover {
 }
 
 .nav ul {
-    margin: 0;
-    padding: 0;
+    margin: 0 3em;
 }
 
 .nav li {
     display: block;
-    float: left;
-    margin-right: 1em;
     list-style: none;
 }
 
-.nav li.subscribe-button {
-    float: right;
+.nav li a {
+    float: left;
+}
+
+.nav li a.subscribe-button {
+    float: left;
 }
 
 .blog-logo img {
@@ -194,18 +200,21 @@ a:hover {
     content: "\f602";
     font-size: 1.1em;
     font-family: "casper-icons";
+    margin-right: 0.5em;
 }
 
 .icon-facebook:before {
     content: "\f604";
     font-family: "casper-icons";
     margin-left: 1em;
+    margin-right: 0.5em;
 }
 
 .icon-location:before {
     content: "\f607";
     font-family: "casper-icons";
     margin-left: -3px;
+    margin-right: 0.5em;
 }
 
 .icon-stats:before {
@@ -222,6 +231,7 @@ a:hover {
 .icon-feed:before {
     content: "\f601";
     font-family: "casper-icons";
+    margin-right: 0.5em;
 }
 
 .icon-arrow-left:before {
