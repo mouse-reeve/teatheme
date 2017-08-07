@@ -37,6 +37,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: "open-sans", sans-serif;
+    font-size: 2em;
 }
 
 h1.page-title {
@@ -47,7 +48,7 @@ h1.page-title {
 }
 
 h2.page-description {
-    color: #BECDEA;
+    color: #7897d3;
     font-family: "dancing-script", sans-serif;
     text-align: center;
     font-size: 1.9rem;
@@ -63,7 +64,7 @@ h4 {
 
 a {
     text-decoration: none;
-    color: #426dc2;
+    color: #7897d3;
 }
 
 a:hover {
@@ -94,10 +95,11 @@ a:hover {
 
 .nav li a {
     float: left;
+    padding: 0 1em;
 }
 
 .nav li a.subscribe-button {
-    float: left;
+    float: right;
 }
 
 .blog-logo img {
@@ -110,6 +112,25 @@ a:hover {
 .main-header {
     background-size: cover;
     min-height: 100px;
+    margin-bottom: 6em;
+}
+
+.main-header-content {
+    margin-bottom: 3em;
+}
+
+
+header.main-header.no-cover::after {
+    content: '\2767';
+    color: #BECDEA;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    width: 1em;
+    margin: 0 auto;
+    position: relative;
+    top: 0.35em;
+    background-color: white;
 }
 
 .author-thumb {
@@ -156,6 +177,10 @@ a:hover {
     margin-bottom: 3em;
 }
 
+.post-header {
+    margin: 2em 0;
+}
+
 .post-title {
     letter-spacing: 0.05em;
 }
@@ -187,9 +212,8 @@ a:hover {
 }
 
 .post-content blockquote {
-    padding-left: 1em;
-    border-left: 5px solid #c0c0c0;
-    margin-left: 0.2em;
+    padding: 1em 2em;
+    background-color: #e0e7f5;
 }
 
 .post-content pre {
