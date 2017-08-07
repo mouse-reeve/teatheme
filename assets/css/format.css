@@ -111,6 +111,7 @@ a:hover {
 
 .main-header {
     background-size: cover;
+    border-bottom: 1px solid black;
     min-height: 100px;
     margin-bottom: 6em;
 }
@@ -133,12 +134,9 @@ header.main-header.no-cover::after {
     background-color: white;
 }
 
-.author-thumb {
-    width: 24px;
-    height: 24px;
-    float: left;
-    margin-right: 9px;
-    border-radius: 100%;
+.author-bio {
+    font-size: 1em;
+    font-family: garamond, georgia, serif;
 }
 
 .author-image .img {
@@ -250,6 +248,7 @@ header.main-header.no-cover::after {
 .icon-ghost:before {
     content: "\f600";
     font-family: "casper-icons";
+    margin-left: -3px;
 }
 
 .icon-feed:before {
@@ -261,14 +260,17 @@ header.main-header.no-cover::after {
 .icon-arrow-left:before {
     content: "\f605";
     font-family: "casper-icons";
+    margin-left: -3px;
 }
 
 .icon-link:before {
     content: "\f608";
     font-family: "casper-icons";
+    margin-left: -3px;
 }
 
 .icon-menu:before {
     content: "\f609";
     font-family: "casper-icons";
+    margin-left: -3px;
 }
