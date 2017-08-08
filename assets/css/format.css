@@ -73,7 +73,7 @@ a:hover {
 
 .site-wrapper, .nav {
     margin: 0 auto;
-    width: 50em;
+    max-width: 50em;
     padding: 2em;
     background-color: white;
 }
