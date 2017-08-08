@@ -204,6 +204,18 @@ header.main-header.no-cover::after {
     margin-bottom: 1em;
 }
 
+.post-content li {
+    margin-bottom: 0.5em;
+}
+
+.post-content h2, h3, h4 {
+    margin: 1.5em 0 1em 0;
+}
+
+.post-content hr {
+    margin: 3em;
+}
+
 .post-content img {
     width: 100%;
 }
