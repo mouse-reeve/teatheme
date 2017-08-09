@@ -71,12 +71,16 @@ a:hover {
     color: black;
 }
 
+.site-wrapper {
+    background-color: white;
+    box-shadow: 0px 0 24px 0px #aaa;
+}
+
 .site-wrapper, .nav {
     margin: 0 auto;
     width: 45em;
     max-width: 80%;
     padding: 2em;
-    background-color: white;
 }
 
 .nav {
@@ -218,6 +222,9 @@ header.main-header.no-cover::after {
 
 .post-content hr {
     margin: 3em;
+    border: 0;
+    height: 1px;
+    background-color: black;
 }
 
 .post-content img {
@@ -231,6 +238,10 @@ header.main-header.no-cover::after {
 
 .post-content blockquote a {
     color: #666;
+}
+
+.post-content blockquote a:hover {
+    color: black;
 }
 
 .post-content pre {
