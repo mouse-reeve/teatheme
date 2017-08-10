@@ -183,7 +183,7 @@ header.main-header.no-cover::after {
 }
 
 .post-header-image {
-    height: 175px;
+    max-height: 175px;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 1em;
@@ -191,7 +191,6 @@ header.main-header.no-cover::after {
 
 .post-header-image img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
 }
 
