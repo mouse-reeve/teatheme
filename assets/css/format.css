@@ -183,14 +183,15 @@ header.main-header.no-cover::after {
 }
 
 .post-header-image {
-    max-height: 11em;
+    height: 175px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
+    margin-bottom: 1em;
 }
 
 .post-header-image img {
     position: absolute;
-    bottom: -30%;
     width: 100%;
     height: auto;
 }
