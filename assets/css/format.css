@@ -185,15 +185,14 @@ header.main-header.no-cover::after {
 .post-header-image {
     height: 175px;
     overflow: hidden;
-    position: relative;
     border-radius: 10px;
     margin-bottom: 1em;
 }
 
 .post-header-image img {
-    position: absolute;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 
