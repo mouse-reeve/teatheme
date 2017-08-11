@@ -78,8 +78,7 @@ a:hover {
 }
 
 .site-nav, footer {
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding: 1em 0;
     overflow: hidden;
 }
 
@@ -88,12 +87,12 @@ a:hover {
     list-style: none;
 }
 
-.site-nav li a {
+.site-nav-left a {
     float: left;
     padding-right: 1em;
 }
 
-.site-nav li a.rss-button {
+.site-nav-right a {
     float: right;
     padding-right: 0;
     padding-left: 1em
