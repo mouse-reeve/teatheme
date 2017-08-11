@@ -126,6 +126,8 @@ header.site-header.no-cover::after {
 .author-bio {
     font-size: 1em;
     font-family: garamond, georgia, serif;
+    font-weight: normal;
+    margin: 1em
 }
 
 .author-profile-image {
@@ -134,26 +136,18 @@ header.site-header.no-cover::after {
     border-radius: 100%;
     float: left;
     background-size: cover;
-    margin-right: 1em;
+    margin: 1em 2em 4em 0;
 }
 
-/*
 .author {
     overflow: hidden;
 }
 
-.author-meta {
-    margin-bottom: 2em;
+.author-meta > * {
+    float: left;
+    margin: 0.1em;
+    position: relative;
 }
-
-.author-meta span {
-    margin-right: 1em;
-}
-
-.author-meta span:last-child {
-    margin-right: 0;
-}
-*/
 
 .share {
     clear: both;
