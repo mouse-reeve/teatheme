@@ -5,15 +5,9 @@
     line-height: 1.4em;
 }
 
-@font-face {
-    font-family: "casper-icons";
-    src:url("../fonts/casper-icons.eot?v=1");
-    src:url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
-        url("../fonts/casper-icons.woff?v=1") format("woff"),
-        url("../fonts/casper-icons.ttf?v=1") format("truetype"),
-        url("../fonts/casper-icons.svg?v=1#icons") format("svg");
-    font-weight: normal;
-    font-style: normal;
+svg {
+    height: 1em;
+    width: 1em;
 }
 
 @font-face {
@@ -40,14 +34,14 @@ h1, h2, h3, h4 {
     font-size: 2em;
 }
 
-h1.page-title {
+h1.site-title {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     font-size: 2.5em;
 }
 
-h2.page-description {
+h2.site-description {
     color: #7897d3;
     font-family: "dancing-script", sans-serif;
     text-align: center;
@@ -76,55 +70,48 @@ a:hover {
     box-shadow: 0px 0 24px 0px #aaa;
 }
 
-.site-wrapper, .nav, body > footer {
+.site-wrapper, .site-nav, body > footer {
     margin: 0 auto;
     width: 45em;
     max-width: 80%;
     padding: 2em;
 }
 
-.nav, footer {
+.site-nav, footer {
     padding-bottom: 1em;
     padding-top: 1em;
     overflow: hidden;
 }
 
-.nav li {
+.site-nav li {
     display: block;
     list-style: none;
 }
 
-.nav li a {
+.site-nav li a {
     float: left;
     padding-right: 1em;
 }
 
-.nav li a.subscribe-button {
+.site-nav li a.rss-button {
     float: right;
     padding-right: 0;
     padding-left: 1em
 }
 
-.blog-logo img {
-    width: 100px;
-    display: block;
-    float: left;
-    margin-right: 1em;
-}
-
-.main-header {
+.site-header {
     background-size: cover;
     border-bottom: 1px solid black;
     min-height: 100px;
     margin-bottom: 6em;
 }
 
-.main-header-content {
+.site-header-content {
     margin-bottom: 3em;
 }
 
 
-header.main-header.no-cover::after {
+header.site-header.no-cover::after {
     content: '\2767';
     color: #7897d3;
     font-size: 2em;
@@ -142,7 +129,7 @@ header.main-header.no-cover::after {
     font-family: garamond, georgia, serif;
 }
 
-.author-image .img {
+.author-profile-image {
     width: 120px;
     height: 120px;
     border-radius: 100%;
@@ -151,6 +138,7 @@ header.main-header.no-cover::after {
     margin-right: 1em;
 }
 
+/*
 .author {
     overflow: hidden;
 }
@@ -166,154 +154,93 @@ header.main-header.no-cover::after {
 .author-meta span:last-child {
     margin-right: 0;
 }
+*/
 
 .share {
     clear: both;
     margin: 1em 0 3em 0;
 }
 
-.post {
+.post-full, .post-card {
     max-width: 45em;
     margin-top: 1em;
     margin-bottom: 3em;
 }
 
-.post-header {
+.post-full-header, .post-card-header {
     margin: 2em 0 1em 0;
 }
 
-.post-header-image {
+.post-card-image {
     max-height: 175px;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 1em;
 }
 
-.post-header-image img {
+.post-card-image img {
     width: 100%;
     border-radius: 10px;
 }
 
-
-.post-title {
+.post-full-title, .post-card-title {
     letter-spacing: 0.05em;
 }
 
-.post-head {
-    float: left;
-}
-
-.post-meta {
+.post-card-meta {
     font-style: italic;
     font-size: 0.8em;
 }
 
-.post ul {
+.post-full ul {
     margin: 0.5em 2em;
 }
 
-.post-content {
+.post-full-content {
     margin-top: 1em;
     margin-bottom: 3em;
 }
 
-.post-content * {
+.post-full-content * {
     margin-bottom: 1em;
 }
 
-.post-content li {
+.post-full-content li {
     margin-bottom: 0.5em;
 }
 
-.post-content h2, h3, h4 {
+.post-full-content h2, h3, h4 {
     margin: 1.5em 0 1em 0;
 }
 
-.post-content h2:first-child, h3:first-child, h4:first-child {
+.post-full-content h2:first-child, h3:first-child, h4:first-child {
     margin-top: 0.5em;
 }
 
-.post-content hr {
+.post-full-content hr {
     margin: 3em;
     border: 0;
     height: 1px;
     background-color: black;
 }
 
-.post-content img {
+.post-full-content img {
     width: 100%;
 }
 
-.post-content blockquote {
+.post-full-content blockquote {
     padding: 1em 2em;
     background-color: #e0e7f5;
 }
 
-.post-content blockquote a {
+.post-full-content blockquote a {
     color: #666;
 }
 
-.post-content blockquote a:hover {
+.post-full-content blockquote a:hover {
     color: black;
 }
 
-.post-content pre {
+.post-full-content pre {
     overflow: scroll;
-}
-
-.icon-twitter:before {
-    content: "\f602";
-    font-size: 1.1em;
-    font-family: "casper-icons";
-    margin-right: 0.5em;
-}
-
-.icon-facebook:before {
-    content: "\f604";
-    font-family: "casper-icons";
-    margin-left: 1em;
-    margin-right: 0.5em;
-}
-
-.icon-location:before {
-    content: "\f607";
-    font-family: "casper-icons";
-    margin-left: -3px;
-    margin-right: 0.5em;
-}
-
-.icon-stats:before {
-    content: "\f606";
-    font-family: "casper-icons";
-    margin-left: -3px;
-}
-
-.icon-ghost:before {
-    content: "\f600";
-    font-family: "casper-icons";
-    margin-left: -3px;
-}
-
-.icon-feed:before {
-    content: "\f601";
-    font-family: "casper-icons";
-    margin-right: 0.5em;
-}
-
-.icon-arrow-left:before {
-    content: "\f605";
-    font-family: "casper-icons";
-    margin-left: -3px;
-}
-
-.icon-link:before {
-    content: "\f608";
-    font-family: "casper-icons";
-    margin-left: -3px;
-}
-
-.icon-menu:before {
-    content: "\f609";
-    font-family: "casper-icons";
-    margin-left: -3px;
 }
