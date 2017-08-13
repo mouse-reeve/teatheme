@@ -54,28 +54,6 @@ a:hover {
     color: black;
 }
 
-/* nav and footer */
-.site-nav, footer {
-    padding: 1em 0;
-    overflow: hidden;
-}
-
-.site-nav li {
-    display: block;
-    list-style: none;
-}
-
-.site-nav-left a {
-    float: left;
-    padding-right: 1em;
-}
-
-.site-nav-right a {
-    float: right;
-    padding-right: 0;
-    padding-left: 1em
-}
-
 /* header */
 .site-header {
     background-size: cover;
@@ -114,6 +92,28 @@ h2.site-description {
     font-family: "dancing-script", sans-serif;
     text-align: center;
     font-size: 1.9rem;
+}
+
+/* nav and footer */
+.site-nav, footer {
+    padding: 1em 0;
+    overflow: hidden;
+}
+
+.site-nav li {
+    display: block;
+    list-style: none;
+}
+
+.site-nav-left a {
+    float: left;
+    padding-right: 1em;
+}
+
+.site-nav-right a {
+    float: right;
+    padding-right: 0;
+    padding-left: 1em
 }
 
 /* content body */
