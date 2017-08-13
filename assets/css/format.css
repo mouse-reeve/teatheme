@@ -5,11 +5,13 @@
     line-height: 1.4em;
 }
 
+/* icons */
 svg {
     height: 1em;
     width: 1em;
 }
 
+/* fancy fonts for headers */
 @font-face {
     font-family: "dancing-script";
     src:url("../fonts/DancingScript-Regular.ttf") format("truetype");
@@ -24,6 +26,7 @@ svg {
     font-style: normal;
 }
 
+/* general styles */
 body {
     background-image: url("../images/background.png");
     font-family: garamond, georgia, serif;
@@ -32,20 +35,6 @@ body {
 h1, h2, h3, h4 {
     font-family: "open-sans", sans-serif;
     font-size: 2em;
-}
-
-h1.site-title {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    font-size: 2.5em;
-}
-
-h2.site-description {
-    color: #7897d3;
-    font-family: "dancing-script", sans-serif;
-    text-align: center;
-    font-size: 1.9rem;
 }
 
 h3 {
@@ -65,39 +54,7 @@ a:hover {
     color: black;
 }
 
-.site-wrapper {
-    background-color: white;
-    box-shadow: 0px 0 24px 0px #aaa;
-}
-
-.site-wrapper, .site-nav, body > footer {
-    margin: 0 auto;
-    width: 45em;
-    max-width: 80%;
-    padding: 2em;
-}
-
-.site-nav, footer {
-    padding: 1em 0;
-    overflow: hidden;
-}
-
-.site-nav li {
-    display: block;
-    list-style: none;
-}
-
-.site-nav-left a {
-    float: left;
-    padding-right: 1em;
-}
-
-.site-nav-right a {
-    float: right;
-    padding-right: 0;
-    padding-left: 1em
-}
-
+/* header */
 .site-header {
     background-size: cover;
     border-bottom: 1px solid black;
@@ -123,6 +80,56 @@ header.site-header.no-cover::after {
     background-color: white;
 }
 
+h1.site-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 2.5em;
+}
+
+h2.site-description {
+    color: #7897d3;
+    font-family: "dancing-script", sans-serif;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+/* nav and footer */
+.site-nav, footer {
+    padding: 1em 0;
+    overflow: hidden;
+}
+
+.site-nav li {
+    display: block;
+    list-style: none;
+}
+
+.site-nav-left a {
+    float: left;
+    padding-right: 1em;
+}
+
+.site-nav-right a {
+    float: right;
+    padding-right: 0;
+    padding-left: 1em
+}
+
+/* content body */
+.site-wrapper {
+    background-color: white;
+    box-shadow: 0px 0 24px 0px #aaa;
+}
+
+.site-wrapper, .site-nav, body > footer {
+    margin: 0 auto;
+    width: 45em;
+    max-width: 80%;
+    padding: 2em;
+}
+
+/* author slug */
 .author-bio {
     font-size: 1em;
     font-family: garamond, georgia, serif;
@@ -149,11 +156,7 @@ header.site-header.no-cover::after {
     position: relative;
 }
 
-.share {
-    clear: both;
-    margin: 1em 0 3em 0;
-}
-
+/* list of posts/excerpts */
 .post-full, .post-card {
     max-width: 45em;
     margin-top: 1em;
@@ -176,6 +179,10 @@ header.site-header.no-cover::after {
     border-radius: 10px;
 }
 
+.post-card-excerpt p::after {
+    content: '...';
+}
+
 .post-full-title, .post-card-title {
     letter-spacing: 0.05em;
 }
@@ -185,6 +192,7 @@ header.site-header.no-cover::after {
     font-size: 0.8em;
 }
 
+/* posts pages */
 .post-full ul {
     margin: 0.5em 2em;
 }
