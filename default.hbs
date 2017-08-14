@@ -14,6 +14,16 @@
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/format.css"}}" />
 
+    {{!-- Favicons --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset "icons/apple-touch-icon.png" }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset "icons/favicon-32x32.png" }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset "icons/favicon-16x16.png" }}">
+    <link rel="manifest" href="{{ asset "icons/manifest.json" }}">
+    <link rel="mask-icon" href="{{ asset "icons/safari-pinned-tab.svg" }}" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
     {{!-- This tag outputes SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
