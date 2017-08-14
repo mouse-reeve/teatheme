@@ -94,6 +94,20 @@ h2.site-description {
     font-size: 1.9rem;
 }
 
+/* content body */
+.site-wrapper {
+    background-color: white;
+    box-shadow: 0px 0 24px 0px #aaa;
+}
+
+.site-wrapper, .site-nav, body > footer {
+    margin: 0 auto;
+    width: 45em;
+    max-width: 80%;
+    padding: 2em;
+}
+
+
 /* nav and footer */
 .site-nav, footer {
     padding: 1em 0;
@@ -114,19 +128,6 @@ h2.site-description {
     float: right;
     padding-right: 0;
     padding-left: 1em
-}
-
-/* content body */
-.site-wrapper {
-    background-color: white;
-    box-shadow: 0px 0 24px 0px #aaa;
-}
-
-.site-wrapper, .site-nav, body > footer {
-    margin: 0 auto;
-    width: 45em;
-    max-width: 80%;
-    padding: 2em;
 }
 
 /* author slug */
