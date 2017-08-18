@@ -107,6 +107,10 @@ h2.site-description {
     padding: 2em;
 }
 
+#site-main {
+    font-size: 1.1em;
+}
+
 
 /* nav and footer */
 .site-nav, footer {
