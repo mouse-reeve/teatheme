@@ -175,8 +175,11 @@ h2.site-description {
 .post-card-image {
     max-height: 175px;
     overflow: hidden;
-    border-radius: 10px;
     margin-bottom: 1em;
+}
+
+.post-full-content img, .post-card-image {
+    border-radius: 10px;
 }
 
 .post-card-image img {
